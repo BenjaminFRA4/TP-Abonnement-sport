@@ -1,0 +1,34 @@
+package sallesport;
+
+public class Prestation {
+    private final String code;
+    private final String libelle;
+    private final double prix;
+
+    public Prestation(String code, String libelle, double prix) {
+        this.code = code;
+        this.libelle = libelle;
+        this.prix = prix;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getLibelle() {
+        return libelle;
+    }
+
+    public double getPrix() {
+        return prix;
+    }
+
+    @Override
+    public String toString() {
+        return "Prestation{" +
+                "code='" + code + '\'' +
+                ", libelle='" + libelle + '\'' +
+                ", prix=" + prix +
+                '}';
+    }
+}
